@@ -40,7 +40,8 @@ h3 {
 #Laptop_Guy{
   padding-bottom: 2%;
   margin-right: 2%;
-  float: left;
+  width: 60%;
+  height: auto;
 }
 #Credit_cards {
   margin-left: 30%;
