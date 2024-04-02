@@ -28,7 +28,13 @@
   color:#fff;
   text-decoration: none;
 }
-
+#main {
+     padding: 2% 20%;
+}
+.footer {
+	background-color: #255be3;
+	padding-bottom: 50px;
+}
 
 
 
@@ -72,8 +78,11 @@
     text-decoration: none;
     color: white;
   }
+  #main {
+     padding: 2% 20%;
+  }
   .footer {
-	background-color: blue;
+	background-color: #255be3;
 	padding-bottom: 50px;
   }
 }
