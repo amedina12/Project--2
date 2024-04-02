@@ -29,10 +29,21 @@
   text-decoration: none;
 }
 #main {
-     padding: 5% 20%;
+  padding: 5% 20%;
 }
 h1 {
-	padding-left: 30%;
+  padding-left: 30%;
+}
+h3 {
+  clear:left;
+}
+#Laptop_Guy{
+  padding-bottom: 2%;
+  margin-right: 2%;
+  float: left;
+}
+#Credit_cards {
+  margin-left: 30%;
 }
 .footer {
 	background-color: #255be3;
@@ -91,18 +102,13 @@ h1 {
   h3 {
 	  clear:left;
   }
-  #statement_text {
-	  padding-top: 3%
-  }
   #Laptop_Guy{
-	  padding-top: 2%;
 	  padding-bottom: 2%;
-	  margin: 2%;
+	  margin-right: 2%;
 	  float: left;
   }
   #Credit_cards {
-	  /*float: right;*/
-	  margin-left: 20%;
+	  margin-left: 30%;
   }
   .footer {
 	background-color: #595857;
