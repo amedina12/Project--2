@@ -88,6 +88,9 @@ h1 {
   h1 {
 	 padding-left: 25%;
   }
+  h3 {
+	  clear:left;
+  }
   #statement_text {
 	  padding-top: 3%
   }
