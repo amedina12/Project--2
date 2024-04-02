@@ -29,7 +29,7 @@
   text-decoration: none;
 }
 #main {
-     padding: 2% 20%;
+     padding: 25% 20%;
 }
 h1 {
 	padding-left: 30%;
@@ -82,10 +82,17 @@ h1 {
     color: white;
   }
   #main {
-     padding: 2% 20%;
+     padding: 25% 20%;
   }
   h1 {
 	 padding-left: 25%;
+  }
+  #Laptop_Guy{
+	  padding-left: 5%;
+	  padding-top: 2%;
+	  padding-right: 2%;
+	  padding-bottom: 2%;
+	  float: left;
   }
   .footer {
 	background-color: #595857;
