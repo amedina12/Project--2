@@ -100,6 +100,10 @@ h1 {
 	  margin: 2%;
 	  float: left;
   }
+  #Credit_cards {
+	  /*float: right;*/
+	  margin-left: 20%;
+  }
   .footer {
 	background-color: #595857;
 	margin-top: 20%;
