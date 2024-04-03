@@ -49,6 +49,10 @@ h3 {
   width: 70%;
   height: auto;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 #CopyRight {
   margin: auto;
 }
@@ -114,6 +118,10 @@ h3 {
 	  padding-bottom: 2%;
 	  margin-right: 2%;
 	  float: left;
+  }
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
   }
   #Credit_cards {
 	  margin-left: 30%;
