@@ -1,6 +1,6 @@
 /*Mobile*/
 #nav-bar {
-  background-color: black;
+  background-color: #333;
   overflow: hidden;
 }
 #nav-container {
@@ -30,7 +30,7 @@
 }
 #main {
   padding: 5% 20%;
-  background-color: red;
+  background-color: #cfd0cd;
 }
 h1 {
   padding-left: 30%;
@@ -68,7 +68,7 @@ table, th, td {
 /*Desktop*/
 @media screen and (min-width:800px) {
   #nav-bar {
-    background-color: black;
+    background-color: #333;
     overflow: hidden;
   }
   #nav-container {
@@ -105,7 +105,7 @@ table, th, td {
   }
   #main {
      padding: 5% 20%;
-	 background-color: red;
+	 background-color: #cfd0cd;
 	 
   }
   h1 {
@@ -127,7 +127,7 @@ table, th, td {
 	  margin-left: 30%;
   }
   .footer {
-	background-color: #595857;
+	background-color: #255be3;
 	padding-bottom: 50px;
   }
 }
