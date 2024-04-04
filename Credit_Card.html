@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="js/script.js"></script>
   </head>
   <header>
     <nav id="nav-bar">
@@ -25,6 +26,7 @@
 	<main id="CCcontent">
 		<form method="get" action="#null" autocomplete="on">
 		  <h1 id="CCH1">Your Perfect Card Is Waiting For You</h1>
+		  <img src="images/citi_cc.png" alt="Image of Citi Bank Premier credit card" id="premiercc">
 		  <p id="CCP1">
 		  Sign up below to gain access to all the things the Citi Premier Card has to offer
 		  </p>
@@ -49,7 +51,7 @@
 			  </li>
 			  <li id="input-ssn">
 				  <label for="input-ssn">Social Security Number</label>
-				  <input type="text" ssn="ssn" id="ssn" placeholder="000-00-000" required>
+				  <input type="text" ssn="ssn" id="ssn" placeholder="000-00-000" pattern="\d{3}-\d{2}-\d{4}" required>
 			  </li>
 			  <li id="input-dob">
 				  <label for="dob">D.O.B</label>
@@ -57,7 +59,7 @@
 			  </li>
 			  <li>
 				<label for="citizenship">Are you a US Citizen?</label>
-				<select id="citizenship" name="citizenship">
+				<select id="citizenship" name="citizenship" required>
 				  <option value="">Select an option</option>
 				  <option value="yes">Yes</option>
 				  <option value="no">No</option>
@@ -70,23 +72,23 @@
 			<ol>
 			  <li id="input-address">
 			    <label for="address">Address</label>
-			    <input type="text" name="address" id="adress">
+			    <input type="text" name="address" id="adress" required>
 			  </li>
 			  <li id="input-zipcode">
 			    <label for="zipcode">Zipcode</label>
-			    <input type="number" name="zipcode" id="zipcode">
+			    <input type="number" name="zipcode" id="zipcode" pattern="\d{5}" required>
 			  </li>
 			  <li id="input-city">
 		        <label for="city">City</label>
-		  	    <input type="text" name="city" id="city">
+		  	    <input type="text" name="city" id="city" required>
 			  </li>
 			  <li id="input-state">
 			    <label for="state">State</label>
-			    <input type="text" name="state" id="state" placeholder="IL">
+			    <input type="text" name="state" id="state" placeholder="IL" pattern="[A-Za-z]{2}" required>
 			  </li>
 			  <li id="input-email">
 			    <label for="email">Email</label>
-			    <input type="email" name="email" id="email" placeholder="you@domain.com" pattern="^.+@.+$">
+			    <input type="email" name="email" id="email" placeholder="you@domain.com" pattern="^.+@.+$" required>
 			  </li>
 			  <li id="input-phone">
 			    <label for="phone">Phone</label>
@@ -99,18 +101,18 @@
 			<ol>
 			  <li id="input-income">
 			    <label for="income">Total Annual Income</label>
-			    <input type="number" name="income" id="income">
+			    <input type="number" name="income" id="income" required>
 			  </li>
 			  <li id="input-mortgage-rent">
 			    <label for="mortgage-rent">Monthly Mortgage or Rent Payment</label>
-			    <input type="number" name="mortgage-rent" id="mortgage-rent">
+			    <input type="number" name="mortgage-rent" id="mortgage-rent" required>
 			  </li>
 		    </ol>
 		  </div>
 		  <div id="agreement">
 			<ol>
 			  <li id="input-tos">
-			    <input type="checkbox" name="tos" id="tos" value="Agreed">
+			    <input type="checkbox" name="tos" id="tos" value="Agreed" required>
 			    <label for="tos">I read and agree to the T.O.S.</label>
 			  </li>
 			  <li id="input-submit">
