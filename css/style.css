@@ -242,7 +242,6 @@ table, th, td {
 
 /* Mobile Styles for Transactions Content */
 #main {
-  padding: 5% 5%;
   background-color: white;
 }
 
@@ -252,12 +251,23 @@ h1 {
 }
 
 
-#transactions-header {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #114dc3; /* Primary color for consistency */
+#transactions-header h1 {
+  font-size: 50px; /* or any other size you prefer */
+  font-family: "Noto Sans";
+  margin-bottom: 60px;
 }
 
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #e0e0e0; /* Light gray background for distinction */
+  font-weight: bold; /* Make header text bold */
+}
+.transaction-header-item {
+  flex: 1;
+  text-align: center;
+}
 #transaction-filters {
   margin-bottom: 20px;
   display: flex;
@@ -282,9 +292,11 @@ h1 {
 
 #filter-date {
   padding: 8px 16px;
+  margin: 5px;
   border-radius: 4px;
-  border: 1px solid #ddd;
   font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for interactive elements */
 }
 
 
@@ -292,7 +304,12 @@ h1 {
   display: inline-block;
   margin-bottom: 5px;
 }
-
+.transaction-heading {
+  font-size: 20px; /* or any other size you prefer */
+  font-family: "Noto Sans";
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
 .transaction {
   background-color: #f9f9f9;
   border-radius: 4px;
@@ -308,6 +325,7 @@ h1 {
 .transaction-detail {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
   margin-bottom: 8px;
   font-size: 14px;
 }
@@ -315,6 +333,7 @@ h1 {
 
 .transaction-detail span {
   display: block;
+  font-family: "Noto Sans";
 }
 
 .transaction-actions {
@@ -338,14 +357,12 @@ h1 {
   #main {
     padding: 5% 10%; /* Slightly more padding for tablets to use the extra space efficiently */
   }
-
-  /* Integrating transaction improvements and adjustments */
 }
 
 /* Desktop Styles for Transactions Content */
 @media screen and (min-width: 800px) {
   #main {
-    padding: 2% 20%; /* Ensures padding is responsive and content is readable on small screens */
+    padding: 2% 5%; 
     background-color: white;
   }
 
@@ -355,17 +372,23 @@ h1 {
   }
 
   .transaction {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment is centered */
+    padding: 15px 20px; 
   }
 
-  .transaction-detail {
-      flex: 1; 
-      padding: 0 10px; 
-      font-size: 16px; 
+   .transaction-detail, .transaction-header {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    text-align: center; /* Center text for each detail for consistency */
   }
-
+  .transaction-detail span {
+    flex: 1;
+    text-align: center;
+    /* Optional: add padding or margin if you need to fine-tune alignment */
+  }
   .transaction-actions {
     justify-self: end; /* Align actions to the right */
   }
@@ -373,10 +396,7 @@ h1 {
   .btn-details {
       padding: 10px 20px; 
   }
-  @media screen and (min-width: 800px) {
-    #transactions-header {
-        text-align: left;
-    }
+  
 
     #transaction-filters {
         text-align: left;
@@ -392,7 +412,7 @@ h1 {
         font-size: 16px;
     }
 }
-}
+
 /*desktop*/
 @media screen and (min-width: 992px){
   #CCcontent {
