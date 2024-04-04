@@ -43,45 +43,44 @@
 #Journey_Start { /*h1*/
   font-family:"Noto Sans";
   font-weight: bold;
-  font-size: 2.917em;
+  font-size: 2.441em;
 }
 #Intro_text {
   font-family:"Titillium Web";
-  margin-left: 15%;
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 #Monthly_State { /*h2*/
   font-family:"Noto Sans";
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 1.25em;
   margin: 3%;
   
 }
 #statement_text {
-  margin-bottom: 10%;
-  margin-top: 14%;
+  margin-bottom: 20%;
+  margin-top: 5%;
   font-family:"Titillium Web";
   float: none;
   line-height: 1.2;
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 #Credit_Heading { /*h3*/
   clear:left;
   font-family:"Noto Sans";
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 1.25em;
   margin: 3%
 }
 #ChooseUs_Heading { /*h4*/
   font-family:"Noto Sans";
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 1.25em;
   margin-top: 2%;
   margin-bottom: 10%;
 }
 #Laptop_Guy{
   padding-bottom: 2%;
-  margin-bottom: 15%;
+  margin-bottom: 8%;
   margin-top: 2%;
   margin-right: 2%;
   width: 60%;
@@ -89,25 +88,21 @@
 }
 #Bonus {
   font-family:"Titillium Web";
-  margin-left: 25%;
+  margin-left: 10%;
   font-weight: bold;
   font-size: 2.17em;
   margin-bottom: 10%;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 #Creditcard_text {
   font-family:"Titillium Web";
-  font-size: 1.25em;
+  font-size: 1.2em;
   margin-bottom: 8%;
 }
 #Credit_cards {
   margin-left: 30%;
   width: 70%;
   height: auto;
-}
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
 }
 #CopyRight {
   margin: auto;
@@ -309,10 +304,7 @@ table, th, td {
    font-size: 1.2em;
    margin-bottom: 8%;
  }
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+
   #Credit_cards {
 	  margin-left: 30%;
   }
@@ -562,7 +554,7 @@ h1 {
    margin-top: 20%;
    font-family:"Titillium Web";
    float: none;
-   line-height: 1.2;
+   line-height: 1.5;
    font-size: 1.25em;
  }
  #Credit_Heading { /*h3*/
