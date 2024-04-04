@@ -28,47 +28,43 @@
 		  <p id="CCP1">
 		  Sign up below to gain access to all the things the Citi Premier Card has to offer
 		  </p>
-		  <h2>Earn 60,000 Bonus Points</h2>
-		  <p>
-			Learn More &rarr; 
-		  </p>
-		  <h2>10X Travel Sign-On Bonus</h2>
-		  <p>
-			Learn More &rarr;
-		  </p>
-		  <h2>3X Points On Food </h2>
-		  <p>
-			Learn More &rarr;
-		  </p>
-		  <h3>Personal Information</h3>
-		  <ol>
-			<li id="input-firstname">
-			  <label for="name">First Name</label>
-			  <input type="text" firstname="name" id="firstname" placeholder="Jane" required>
-			</li>
-			<li id="input-lastname">
-				<label for="name">Last Name</label>
-				<input type="text" lastname="name" id="lastname" placeholder="Fraser" required>
-			</li>
-			<li id="input-ssn">
-				<label for="input-ssn">Social Security Number</label>
-				<input type="text" ssn="ssn" id="ssn" placeholder="000-00-000" required>
-			</li>
-			<li id="input-dob">
-				<label for="dob">D.O.B</label>
-				<input type="date" name="dob" id="dob" required max="2004-12-31">
-			</li>
-			<li>
-			  <label>
-				Are you a US Citizen?
-				<input type="radio" name="gender" value="yes">
-			    Yes
-			  </label>
-			  <label>
-			    <input type="radio" name="gender" value="no">
-				No
-			  </label>
-			</li>
+		  <div class="promotions">
+			<h2>Earn 60,000 Bonus Points</h2>
+			<h2>10X Travel Sign-On Bonus</h2>
+			<h2>3X Points On Food </h2>
+			<p id="learnmore">
+				Learn More &rarr;
+			</p>
+		  </div>
+		  <div id="personalinfo">
+		    <h3>Personal Information</h3>
+		    <ol>
+			  <li id="input-firstname">
+			    <label for="name">First Name</label>
+			    <input type="text" firstname="name" id="firstname" placeholder="Jane" required>
+			  </li>
+			  <li id="input-lastname">
+				  <label for="name">Last Name</label>
+				  <input type="text" lastname="name" id="lastname" placeholder="Fraser" required>
+			  </li>
+			  <li id="input-ssn">
+				  <label for="input-ssn">Social Security Number</label>
+				  <input type="text" ssn="ssn" id="ssn" placeholder="000-00-000" required>
+			  </li>
+			  <li id="input-dob">
+				  <label for="dob">D.O.B</label>
+				  <input type="date" name="dob" id="dob" required max="2004-12-31">
+			  </li>
+			  <li>
+				<label for="citizenship">Are you a US Citizen?</label>
+				<select id="citizenship" name="citizenship">
+				  <option value="">Select an option</option>
+				  <option value="yes">Yes</option>
+				  <option value="no">No</option>
+				</select>
+			  </li>
+			</ol> 
+		  </div>
 		  <div id="contactinfo">
 			<h3>Contact Information</h3>
 			<ol>
