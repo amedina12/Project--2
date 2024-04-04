@@ -252,7 +252,7 @@ h1 {
 
 
 #transactions-header h1 {
-  font-size: 50px; /* or any other size you prefer */
+  font-size: 50px; 
   font-family: "Noto Sans";
   margin-bottom: 60px;
 }
@@ -261,8 +261,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  background-color: #e0e0e0; /* Light gray background for distinction */
-  font-weight: bold; /* Make header text bold */
+  background-color: #e0e0e0; 
+  font-weight: bold; 
 }
 .transaction-header-item {
   flex: 1;
@@ -284,7 +284,7 @@ h1 {
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Smooth transition for interactive elements */
+  transition: background-color 0.3s; 
 }
 .filter-btn:hover {
   background-color: #114dc3;
@@ -296,7 +296,7 @@ h1 {
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Smooth transition for interactive elements */
+  transition: background-color 0.3s; 
 }
 
 
@@ -305,7 +305,7 @@ h1 {
   margin-bottom: 5px;
 }
 .transaction-heading {
-  font-size: 20px; /* or any other size you prefer */
+  font-size: 20px; 
   font-family: "Noto Sans";
   margin-bottom: 8px;
   margin-top: 10px;
@@ -355,7 +355,7 @@ h1 {
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
   #main {
-    padding: 5% 10%; /* Slightly more padding for tablets to use the extra space efficiently */
+    padding: 5% 10%; 
   }
 }
 
@@ -374,7 +374,7 @@ h1 {
   .transaction {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Ensure vertical alignment is centered */
+    align-items: center; 
     padding: 15px 20px; 
   }
 
@@ -382,15 +382,14 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex: 1;
-    text-align: center; /* Center text for each detail for consistency */
+    text-align: center; 
   }
   .transaction-detail span {
     flex: 1;
     text-align: center;
-    /* Optional: add padding or margin if you need to fine-tune alignment */
   }
   .transaction-actions {
-    justify-self: end; /* Align actions to the right */
+    justify-self: end; 
   }
 
   .btn-details {
