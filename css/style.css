@@ -7,7 +7,6 @@
 #highlight {
   background-color: rgb(40,96,161); /* Change this to the color you want */
 }
-
 #nav-container {
   float: left;
   width: 100%;
@@ -37,7 +36,6 @@
 #nav-bar ul li a:hover {
   background-color:rgb(40,96,161);
 }
-
 #main {
   padding: 5% 20%;
   background-color: white;
@@ -92,7 +90,6 @@ table, th, td {
   font-size: 1em;
   text-align: center;
 }
-
 #learnmore {
   text-align: center;
 }
@@ -143,10 +140,17 @@ table, th, td {
 #premiercc {
   display: block;
   margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
-
-
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*tablet*/
 @media screen and (min-width:768px) {
@@ -192,11 +196,11 @@ table, th, td {
 	 
   }
   h1 {
-	 padding-left: 25%;
-	 font-family:"Noto Sans", sans-serif;
+	  padding-left: 25%;
+	  font-family:"Noto Sans", sans-serif;
   }
   h2 {
-	 font-family:"Noto Sans", sans-serif;
+	  font-family:"Noto Sans", sans-serif;
   }
   h3 {
 	  clear:left;
@@ -208,19 +212,60 @@ table, th, td {
 	  float: left;
   }
   table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
   }
   #Credit_cards {
 	  margin-left: 30%;
   }
   .footer {
-	background-color: #bbbcb8;
-	padding-bottom: 50px;
+	  background-color: #bbbcb8;
+	  padding-bottom: 50px;
+  }
+  #CCH1, #CCP1 {
+    margin: 5%;
+  }
+  .promotions {
+    margin: 5%;
+  }
+  #personalinfo, #contactinfo, #financialinfo, #agreement {
+    margin: 5%;
+  }
+  #input-submit [type="submit"]{
+    padding: 15px;
+    font-size:large;
+  }
+  #input-tos {
+    margin-bottom: 20px;
   }
 }
-
-
-
+/*desktop*/
 @media screen and (min-width: 992px){
+  #CCcontent {
+    max-width: 70%;
+  }
+  #CCH1, #CCP1 {
+    margin: 5%;
+  }
+  .promotions {
+    margin: 5%;
+    padding: 2%;
+  }
+  #personalinfo, #contactinfo, #financialinfo, #agreement {
+    margin: 5%;
+    padding: 2%;
+  }
+  #input-submit [type="submit"]{
+    padding: 15px;
+    font-size:large;
+  }
+  #input-tos {
+    margin-bottom: 20px;
+  }
+  #CCP1 {
+    font-size: 1.618em; /* Adjust the font size as needed */
+  }
+  #CCH1{
+    font-size: 2.618em;
+  }
 }
