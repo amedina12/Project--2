@@ -357,6 +357,7 @@ h1 {
 .transaction-header-item {
   flex: 1;
   text-align: center;
+  font-family: "Noto Sans";
 }
 #transaction-filters {
   margin-bottom: 20px;
@@ -374,7 +375,8 @@ h1 {
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
+  font-family: "Noto Sans";
 }
 .filter-btn:hover {
   background-color: #114dc3;
@@ -438,6 +440,7 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: "Noto Sans";
 }
 .btn-details:hover {
   background-color: #0d3b8c;
