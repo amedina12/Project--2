@@ -73,6 +73,58 @@ table, th, td {
 	background-color: #bbbcb8;
 	padding-bottom: 50px;
 }
+#CCcontent{
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Noto Sans";
+}
+#CCH1 {
+  text-align: center;
+  margin: 10%;
+  padding: 0%;
+}
+#CCP1 {
+  margin: 10%;
+  padding: 0%;
+  font-size: 1em;
+  text-align: center;
+}
+#learnmore {
+  text-align: center;
+}
+.promotions {
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #bcbcbc;
+  text-align: center;
+}
+
+#personalinfo, #contactinfo {
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #bcbcbc;
+}
+
+#personalinfo ol, #contactinfo ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#personalinfo ol li, #contactinfo ol li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+#personalinfo input, #contactinfo input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
 
 
 
