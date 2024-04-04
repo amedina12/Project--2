@@ -115,9 +115,14 @@ table, th, td {
   }
   h1 {
 	 padding-left: 25%;
+	 font-family:"Noto Sans", sans-serif;
+  }
+  h2 {
+	 font-family:"Noto Sans", sans-serif;
   }
   h3 {
 	  clear:left;
+	  font-family:"Noto Sans", sans-serif;
   }
   #Laptop_Guy{
 	  padding-bottom: 2%;
