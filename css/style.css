@@ -84,6 +84,7 @@ table, th, td {
   text-align: center;
   margin: 10%;
   padding: 0%;
+  color: #3c3c3c;
 }
 #CCP1 {
   margin: 10%;
@@ -102,7 +103,8 @@ table, th, td {
   border-radius: 10px;
   box-shadow: 0 2px 4px #bcbcbc;
   text-align: center;
-  background-color: rgb(179, 215, 237);
+  background-color: rgb(22,66,115);
+  color: rgb(235, 234, 234);
 }
 
 #personalinfo, #contactinfo, #financialinfo, #agreement {
