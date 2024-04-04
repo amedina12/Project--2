@@ -1,12 +1,17 @@
 /*Mobile*/
 #nav-bar {
-  background-color: #4948f9;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
+  font-family: "Noto Sans";
+}
+#highlight {
+  background-color: rgb(40,96,161); /* Change this to the color you want */
 }
 #nav-container {
   float: left;
   width: 100%;
   position: relative;
+  background-color: rgb(27,66,115);
 }
 #nav-bar ul {
   list-style-type: none;
@@ -27,6 +32,9 @@
   padding: 10px 30px;
   color:#fff;
   text-decoration: none;
+}
+#nav-bar ul li a:hover {
+  background-color:rgb(40,96,161);
 }
 #main {
   padding: 5% 20%;
@@ -68,15 +76,101 @@ table, th, td {
 	background-color: #bbbcb8;
 	padding-bottom: 50px;
 }
+#CCcontent{
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Noto Sans";
+}
+#CCH1 {
+  text-align: center;
+  margin: 10%;
+  padding: 0%;
+  color: #3c3c3c;
+  font-size: 1.618em;
+  font-weight: bolder;
+}
+#CCP1 {
+  margin: 10%;
+  padding: 0%;
+  font-size: 1em;
+  text-align: center;
+}
+#learnmore {
+  text-align: center;
+  font-size: .618em;
+}
+.promotions {
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #bcbcbc;
+  text-align: center;
+  background-color: rgb(22,66,115);
+  color: rgb(235, 234, 234);
+  font-size: 1.618em;
+  font-weight: bolder;
+}
+.promotions h2 {
+  margin: 5%;
+}
+#personalinfo h3, #contactinfo h3, #financialinfo h3{
+  font-weight: bold;
+  font-size: 1.375em;
+  margin-block-end: 5%;
+}
+#personalinfo, #contactinfo, #financialinfo, #agreement {
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #bcbcbc;
+}
 
+#personalinfo ol, #contactinfo ol, #financialinfo ol, #agreement ol {
+  list-style-type: none;
+  padding-left: 0;
+}
 
+#personalinfo ol li, #contactinfo ol li, #financialinfo ol li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+#personalinfo input, #contactinfo input, #financialinfo input, #input-submit input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+#input-submit [type="submit"]{
+  background: rgb(27,66,115);
+  color: rgb(249, 249, 249);
+  font-weight: bold;
+  border: none;
+}
+#input-tos input[type="checkbox"]{
+  accent-color: rgb(27,66,115);
+}
+#premiercc {
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-
-
-/*Desktop*/
-@media screen and (min-width:800px) {
+/*tablet*/
+@media screen and (min-width:768px) {
   #nav-bar {
-    background-color: #4948f9;
+    background-color: #ffffff;
     overflow: hidden;
   }
   #nav-container {
@@ -112,8 +206,8 @@ table, th, td {
     color: white;
   }
   #main {
-     padding: 5% 20%;
-	 background-color: white;
+    padding: 5% 20%;
+	  background-color: white;
 	 
   }
   h1 {
@@ -136,14 +230,214 @@ table, th, td {
 	  float: left;
   }
   table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
   }
   #Credit_cards {
 	  margin-left: 30%;
   }
   .footer {
-	background-color: #bbbcb8;
-	padding-bottom: 50px;
+	  background-color: #bbbcb8;
+	  padding-bottom: 50px;
+  }
+  #CCH1, #CCP1 {
+    margin: 5%;
+  }
+  .promotions {
+    margin: 5%;
+  }
+  #personalinfo, #contactinfo, #financialinfo, #agreement {
+    margin: 5%;
+  }
+  #input-submit [type="submit"]{
+    padding: 15px;
+    font-size:large;
+  }
+  #input-tos {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Styles for Transactions Content */
+#main {
+  padding: 5% 5%;
+  background-color: white;
+}
+
+h1 {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+
+#transactions-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #114dc3; /* Primary color for consistency */
+}
+
+#transaction-filters {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #255be3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for interactive elements */
+}
+.filter-btn:hover {
+  background-color: #114dc3;
+}
+
+#filter-date {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+
+#transaction-filters button, #transaction-filters input[type="date"] {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.transaction {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.transaction:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.transaction-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+
+.transaction-detail span {
+  display: block;
+}
+
+.transaction-actions {
+  text-align: center;
+}
+
+.btn-details {
+  background-color: #114dc3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-details:hover {
+  background-color: #0d3b8c;
+}
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  #main {
+    padding: 5% 10%; /* Slightly more padding for tablets to use the extra space efficiently */
+  }
+
+  /* Integrating transaction improvements and adjustments */
+}
+
+/* Desktop Styles for Transactions Content */
+@media screen and (min-width: 800px) {
+  #main {
+    padding: 2% 20%; /* Ensures padding is responsive and content is readable on small screens */
+    background-color: white;
+  }
+
+  #transaction-filters button {
+      padding: 10px 20px; 
+      font-size: 16px;
+  }
+
+  .transaction {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px; 
+  }
+
+  .transaction-detail {
+      flex: 1; 
+      padding: 0 10px; 
+      font-size: 16px; 
+  }
+
+  .transaction-actions {
+    justify-self: end; /* Align actions to the right */
+  }
+
+  .btn-details {
+      padding: 10px 20px; 
+  }
+  @media screen and (min-width: 800px) {
+    #transactions-header {
+        text-align: left;
+    }
+
+    #transaction-filters {
+        text-align: left;
+    }
+
+    .filter-btn {
+        padding: 10px 20px; 
+        font-size: 16px;
+    }
+
+    #filter-date {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+}
+/*desktop*/
+@media screen and (min-width: 992px){
+  #CCcontent {
+    max-width: 70%;
+  }
+  #CCH1, #CCP1 {
+    margin: 5%;
+  }
+  .promotions {
+    margin: 5%;
+    padding: 2%;
+  }
+  #personalinfo, #contactinfo, #financialinfo, #agreement {
+    margin: 5%;
+    padding: 2%;
+  }
+  #input-submit [type="submit"]{
+    padding: 15px;
+    font-size:large;
+  }
+  #input-tos {
+    margin-bottom: 20px;
+  }
+  #CCP1 {
+    font-size: 1.618em; /* Adjust the font size as needed */
+  }
+  #CCH1{
+    font-size: 2.618em;
   }
 }
