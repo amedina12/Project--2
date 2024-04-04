@@ -559,7 +559,7 @@ h1 {
  }
  #statement_text {
    margin-bottom: 10%;
-   margin-top: 14%;
+   margin-top: 20%;
    font-family:"Titillium Web";
    float: none;
    line-height: 1.2;
@@ -570,7 +570,7 @@ h1 {
    font-family:"Noto Sans";
    font-weight: bold;
    font-size: 1.75em;
-   margin: 3%;
+   margin-top: 3%;
    margin-bottom: 10%;
  }
  #ChooseUs_Heading { /*h4*/
@@ -588,7 +588,7 @@ h1 {
   #Bonus {
     font-family:"Titillium Web";
     margin-left: 25%;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 2.17em;
     margin-bottom: 10%;
     margin-top: 5%;
