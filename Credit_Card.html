@@ -9,16 +9,108 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
-	  <nav id="nav-bar">
+  <header>
+    <nav id="nav-bar">
 	  <img src="images/Citi-logo.png" alt="image_Citi">
-	  <div id="nav-container">
-	    <ul>
-          <li><a href="index.html">Home</a></li>
-		  <li><a href="Account.html">Account</a></li>
-		  <li id="highlight"><a href="Credit_Card.html">Credit Card</a></li>
-		</ul>
-	  </div>
-	  </nav>
-	</header>
+		<div id="nav-container">
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Account.html">Account</a></li>
+			<li id="highlight"><a href="Credit_Card.html">Credit Cards</a></li>
+		  </ul>
+		</div>
+	</nav>
+  </header>
+  <body>
+	<main id="content">
+		<form method="get" action="#null" autocomplete="on">
+		  <h1>Your Perfect Card Is Waiting For You</h1>
+		  <p>
+		  Sign up below to gain access to all the things the Citi Premier Card has to offer
+		  </p>
+		  <h2>Earn 60,000 Bonus Points</h2>
+		  <p>
+			Learn More &rarr; 
+		  </p>
+		  <h2>10X Travel Sign-On Bonus</h2>
+		  <p>
+			Learn More &rarr;
+		  </p>
+		  <h2>3X Points On Food </h2>
+		  <p>
+			Learn More &rarr;
+		  </p>
+		  <h3>Personal Information</h3>
+		  <ol>
+			<li id="input-firstname">
+			  <label for="name">First Name</label>
+			  <input type="text" firstname="name" id="firstname" placeholder="Jane" required>
+			</li>
+			<li id="input-lastname">
+				<label for="name">Last Name</label>
+				<input type="text" lastname="name" id="lastname" placeholder="Fraser" required>
+			</li>
+			<li id="input-ssn">
+				<label for="input-ssn">Social Security Number</label>
+				<input type="text" ssn="ssn" id="ssn" placeholder="000-00-000" required>
+			</li>
+			<li id="input-dob">
+				<label for="dob">D.O.B</label>
+				<input type="date" name="dob" id="dob" required max="2004-12-31">
+			</li>
+			<li>
+			  <label>
+				Are you a US Citizen?
+				<input type="radio" name="gender" value="yes">
+			    Yes
+			  </label>
+			  <label>
+			    <input type="radio" name="gender" value="no">
+				No
+			  </label>
+			</li>
+			<h3>Contact Information</h3>
+			<li id="input-address">
+			  <label for="address">Address</label>
+			  <input type="text" name="address" id="adress">
+			</li>
+			<li id="input-zipcode">
+			  <label for="zipcode">Zipcode</label>
+			  <input type="number" name="zipcode" id="zipcode">
+			</li>
+			<li id="input-city">
+		      <label for="city">City</label>
+			  <input type="text" name="city" id="city">
+			</li>
+			<li id="input-state">
+			  <label for="state">State</label>
+			  <input type="text" name="state" id="state" placeholder="IL">
+			</li>
+			<li id="input-email">
+			  <label for="email">Email</label>
+			  <input type="email" name="email" id="email" placeholder="you@domain.com" pattern="^.+@.+$">
+			</li>
+			<li id="input-phone">
+			  <label for="phone">Phone</label>
+			  <input type="tel" name="phone" id="phone" placeholder="###-###-####" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+			</li>
+			<h3>Financial Information</h3>
+			<li id="input-income">
+			  <label for="income">Total Annual Income</label>
+			  <input type="number" name="income" id="income">
+			</li>
+			<li id="input-mortgage-rent">
+			  <label for="mortgage-rent">Monthly Mortgage or Rent Payment</label>
+			  <input type="number" name="mortgage-rent" id="mortgage-rent">
+			</li>
+			<li id="input-tos">
+			  <input type="checkbox" name="tos" id="tos" value="Agreed">
+			  <label for="tos">I read and agree to the T.O.S.</label>
+			</li>
+			<li id="input-submit">
+			  <input type="submit" name="submit" id="submit" value="Apply">
+			</li>
+		  </ol>
+		</form>
+	  </main>
+  </body>

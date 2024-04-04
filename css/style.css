@@ -3,6 +3,10 @@
   background-color: #4948f9;
   overflow: hidden;
 }
+#highlight {
+  background-color: #6275ef; /* Change this to the color you want */
+}
+
 #nav-container {
   float: left;
   width: 100%;
@@ -28,6 +32,10 @@
   color:#fff;
   text-decoration: none;
 }
+#nav-bar ul li a:hover {
+  background-color:#6275ef;
+}
+
 #main {
   padding: 5% 20%;
   background-color: white;
