@@ -255,21 +255,29 @@ h1 {
 #transactions-header {
   text-align: center;
   margin-bottom: 20px;
+  color: #114dc3; /* Primary color for consistency */
 }
 
 #transaction-filters {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
   padding: 8px 16px;
-  margin-right: 5px;
+  margin: 5px;
   background-color: #255be3;
   color: white;
   border: none;
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for interactive elements */
+}
+.filter-btn:hover {
+  background-color: #114dc3;
 }
 
 #filter-date {
@@ -289,8 +297,12 @@ h1 {
   background-color: #f9f9f9;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.transaction:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .transaction-detail {
@@ -299,6 +311,7 @@ h1 {
   margin-bottom: 8px;
   font-size: 14px;
 }
+
 
 .transaction-detail span {
   display: block;
@@ -315,12 +328,25 @@ h1 {
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-details:hover {
+  background-color: #0d3b8c;
+}
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  #main {
+    padding: 5% 10%; /* Slightly more padding for tablets to use the extra space efficiently */
+  }
+
+  /* Integrating transaction improvements and adjustments */
 }
 
 /* Desktop Styles for Transactions Content */
 @media screen and (min-width: 800px) {
   #main {
-      padding: 2% 20%;
+    padding: 2% 20%; /* Ensures padding is responsive and content is readable on small screens */
+    background-color: white;
   }
 
   #transaction-filters button {
@@ -341,8 +367,7 @@ h1 {
   }
 
   .transaction-actions {
-      flex: 0 0 auto; 
-      text-align: right;
+    justify-self: end; /* Align actions to the right */
   }
 
   .btn-details {
