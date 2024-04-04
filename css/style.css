@@ -1,12 +1,17 @@
 /*Mobile*/
 #nav-bar {
-  background-color: #4948f9;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
+  font-family: "Noto Sans";
+}
+#highlight {
+  background-color: rgb(40,96,161); /* Change this to the color you want */
 }
 #nav-container {
   float: left;
   width: 100%;
   position: relative;
+  background-color: rgb(27,66,115);
 }
 #nav-bar ul {
   list-style-type: none;
@@ -27,6 +32,9 @@
   padding: 10px 30px;
   color:#fff;
   text-decoration: none;
+}
+#nav-bar ul li a:hover {
+  background-color:rgb(40,96,161);
 }
 #main {
   padding: 5% 20%;
@@ -65,15 +73,89 @@ table, th, td {
 	background-color: #bbbcb8;
 	padding-bottom: 50px;
 }
+#CCcontent{
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Noto Sans";
+}
+#CCH1 {
+  text-align: center;
+  margin: 10%;
+  padding: 0%;
+  color: #3c3c3c;
+}
+#CCP1 {
+  margin: 10%;
+  padding: 0%;
+  font-size: 1em;
+  text-align: center;
+}
+#learnmore {
+  text-align: center;
+}
+.promotions {
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #bcbcbc;
+  text-align: center;
+  background-color: rgb(22,66,115);
+  color: rgb(235, 234, 234);
+}
 
+#personalinfo, #contactinfo, #financialinfo, #agreement {
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #bcbcbc;
+}
 
+#personalinfo ol, #contactinfo ol, #financialinfo ol, #agreement ol {
+  list-style-type: none;
+  padding-left: 0;
+}
 
+#personalinfo ol li, #contactinfo ol li, #financialinfo ol li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+#personalinfo input, #contactinfo input, #financialinfo input, #input-submit input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+#input-submit [type="submit"]{
+  background: rgb(27,66,115);
+  color: rgb(249, 249, 249);
+  font-weight: bold;
+  border: none;
+}
+#input-tos input[type="checkbox"]{
+  accent-color: rgb(27,66,115);
+}
+#premiercc {
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-
-/*Desktop*/
-@media screen and (min-width:800px) {
+/*tablet*/
+@media screen and (min-width:768px) {
   #nav-bar {
-    background-color: #4948f9;
+    background-color: #ffffff;
     overflow: hidden;
   }
   #nav-container {
@@ -109,16 +191,16 @@ table, th, td {
     color: white;
   }
   #main {
-     padding: 5% 20%;
-	 background-color: white;
+    padding: 5% 20%;
+	  background-color: white;
 	 
   }
   h1 {
-	 padding-left: 25%;
-	 font-family:"Noto Sans", sans-serif;
+	  padding-left: 25%;
+	  font-family:"Noto Sans", sans-serif;
   }
   h2 {
-	 font-family:"Noto Sans", sans-serif;
+	  font-family:"Noto Sans", sans-serif;
   }
   h3 {
 	  clear:left;
@@ -130,14 +212,60 @@ table, th, td {
 	  float: left;
   }
   table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
   }
   #Credit_cards {
 	  margin-left: 30%;
   }
   .footer {
-	background-color: #bbbcb8;
-	padding-bottom: 50px;
+	  background-color: #bbbcb8;
+	  padding-bottom: 50px;
+  }
+  #CCH1, #CCP1 {
+    margin: 5%;
+  }
+  .promotions {
+    margin: 5%;
+  }
+  #personalinfo, #contactinfo, #financialinfo, #agreement {
+    margin: 5%;
+  }
+  #input-submit [type="submit"]{
+    padding: 15px;
+    font-size:large;
+  }
+  #input-tos {
+    margin-bottom: 20px;
+  }
+}
+/*desktop*/
+@media screen and (min-width: 992px){
+  #CCcontent {
+    max-width: 70%;
+  }
+  #CCH1, #CCP1 {
+    margin: 5%;
+  }
+  .promotions {
+    margin: 5%;
+    padding: 2%;
+  }
+  #personalinfo, #contactinfo, #financialinfo, #agreement {
+    margin: 5%;
+    padding: 2%;
+  }
+  #input-submit [type="submit"]{
+    padding: 15px;
+    font-size:large;
+  }
+  #input-tos {
+    margin-bottom: 20px;
+  }
+  #CCP1 {
+    font-size: 1.618em; /* Adjust the font size as needed */
+  }
+  #CCH1{
+    font-size: 2.618em;
   }
 }
