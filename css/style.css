@@ -83,6 +83,8 @@ table, th, td {
   margin: 10%;
   padding: 0%;
   color: #3c3c3c;
+  font-size: 1.618em;
+  font-weight: bolder;
 }
 #CCP1 {
   margin: 10%;
@@ -92,6 +94,7 @@ table, th, td {
 }
 #learnmore {
   text-align: center;
+  font-size: .618em;
 }
 .promotions {
   margin: 10%;
@@ -102,8 +105,17 @@ table, th, td {
   text-align: center;
   background-color: rgb(22,66,115);
   color: rgb(235, 234, 234);
+  font-size: 1.618em;
+  font-weight: bolder;
 }
-
+.promotions h2 {
+  margin: 5%;
+}
+#personalinfo h3, #contactinfo h3, #financialinfo h3{
+  font-weight: bold;
+  font-size: 1.375em;
+  margin-block-end: 5%;
+}
 #personalinfo, #contactinfo, #financialinfo, #agreement {
   margin: 10%;
   padding: 5%;
