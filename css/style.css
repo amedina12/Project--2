@@ -143,10 +143,10 @@ table, th, td {
 
 
 
-/*Desktop*/
-@media screen and (min-width:800px) {
+/*tablet*/
+@media screen and (min-width:768px) {
   #nav-bar {
-    background-color: #4948f9;
+    background-color: #ffffff;
     overflow: hidden;
   }
   #nav-container {
@@ -182,8 +182,8 @@ table, th, td {
     color: white;
   }
   #main {
-     padding: 5% 20%;
-	 background-color: white;
+    padding: 5% 20%;
+	  background-color: white;
 	 
   }
   h1 {
@@ -213,4 +213,6 @@ table, th, td {
 	background-color: #bbbcb8;
 	padding-bottom: 50px;
   }
+}
+@media screen and (min-width: 992px){
 }
