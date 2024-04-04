@@ -131,3 +131,132 @@ table, th, td {
 	padding-bottom: 50px;
   }
 }
+
+/* Mobile Styles for Transactions Content */
+#main {
+  padding: 5% 5%;
+  background-color: white;
+}
+
+h1 {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+
+#transactions-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#transaction-filters {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  margin-right: 5px;
+  background-color: #255be3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#filter-date {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+
+#transaction-filters button, #transaction-filters input[type="date"] {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.transaction {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.transaction-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.transaction-detail span {
+  display: block;
+}
+
+.transaction-actions {
+  text-align: center;
+}
+
+.btn-details {
+  background-color: #114dc3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Desktop Styles for Transactions Content */
+@media screen and (min-width: 800px) {
+  #main {
+      padding: 2% 20%;
+  }
+
+  #transaction-filters button {
+      padding: 10px 20px; 
+      font-size: 16px;
+  }
+
+  .transaction {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px; 
+  }
+
+  .transaction-detail {
+      flex: 1; 
+      padding: 0 10px; 
+      font-size: 16px; 
+  }
+
+  .transaction-actions {
+      flex: 0 0 auto; 
+      text-align: right;
+  }
+
+  .btn-details {
+      padding: 10px 20px; 
+  }
+  @media screen and (min-width: 800px) {
+    #transactions-header {
+        text-align: left;
+    }
+
+    #transaction-filters {
+        text-align: left;
+    }
+
+    .filter-btn {
+        padding: 10px 20px; 
+        font-size: 16px;
+    }
+
+    #filter-date {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+}

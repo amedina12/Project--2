@@ -3,19 +3,181 @@
   <head>
     <meta charset="utf-8">
     <title>Account</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
   </head>
   <body>
     <header>
-	  <nav id="nav-bar">
-	  <img src="images/Citi-logo.png" alt="image_Citi">
-	  <div id="nav-container">
-	    <ul>
-          <li><a href="index.html">Home</a></li>
-		  <li id="highlight"><a href="Account.html">Account</a></li>
-		  <li><a href="Credit_Card.html">Credit Card</a></li>
-		</ul>
-	  </div>
-	  </nav>
-	</header>
+      <nav id="nav-bar">
+        <img src="images/Citi-logo.png" alt="image_Citi">
+        <div id="nav-container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="highlight"><a href="Account.html">Account</a></li>
+            <li><a href="Credit_Card.html">Credit Card</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="transactions-header">
+        <h1>Transactions</h1>
+        <div id="transaction-filters">
+          <button class="filter-btn" id="filter-all">All</button>
+          <button class="filter-btn" id="filter-completed">Completed</button>
+          <button class="filter-btn" id="filter-pending">Pending</button>
+          <input type="date" id="filter-date">
+        </div>
+      </section>
+      <section id="transactions-list">
+        <article class="transaction">
+          <h2 class="transaction-heading">Transaction Details</h2>
+          <div class="transaction-detail">
+            <span class="transaction-date">20 Dec 21</span>
+            <span class="transaction-time">12:20 AM</span>
+          </div>
+          <div class="transaction-detail">
+            <span class="transaction-id">Trans123456</span>
+            <span class="transaction-name">John Doe</span>
+          </div>
+          <div class="transaction-detail">
+            <span class="transaction-amount">$100.00</span>
+            <span class="transaction-status complete">Complete</span>
+          </div>
+          <div class="transaction-actions">
+            <button class="btn-details">Details</button>
+          </div>
+        </article>
+		<article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+		  <article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+		  <article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+		  <article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+		  <article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+		  <article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+		  <article class="transaction">
+			<h2 class="transaction-heading">Transaction Details</h2>
+			<div class="transaction-detail">
+			  <span class="transaction-date">20 Dec 21</span>
+			  <span class="transaction-time">12:20 AM</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-id">Trans123456</span>
+			  <span class="transaction-name">John Doe</span>
+			</div>
+			<div class="transaction-detail">
+			  <span class="transaction-amount">$100.00</span>
+			  <span class="transaction-status complete">Complete</span>
+			</div>
+			<div class="transaction-actions">
+			  <button class="btn-details">Details</button>
+			</div>
+		  </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <p id="CopyRight">&copy; 2024 Citibank, Citigroup Inc.</p>
+    </footer>
+  </body>
+</html>
