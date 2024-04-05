@@ -329,6 +329,10 @@ h1 {
 #welcome-section {
   padding: 20px;
   text-align: center; 
+  border: 1px solid #0a4a9e; /* Thin blue border */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 70px auto;
 }
 
 .welcome-message h2 {
