@@ -329,6 +329,10 @@ h1 {
 #welcome-section {
   padding: 20px;
   text-align: center; 
+  border: 1px solid #0a4a9e; 
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 70px auto;
 }
 
 .welcome-message h2 {
@@ -391,7 +395,7 @@ h1 {
 }
 
 .action-btn {
-  background-color: #255be3;
+  background-color: rgb(22,66,115);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -404,6 +408,42 @@ h1 {
 .action-btn:hover {
   background-color: #0056b3; 
 }
+.scroll-cta {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0; 
+}
+
+.scroll-cta p {
+  font-family: 'Noto Sans', sans-serif;
+  color: #0a4a9e; 
+  margin-bottom: 10px;
+}
+
+.scroll-arrow {
+  display: inline-block;
+  font-size: 24px; 
+  color: #0a4a9e;
+  -webkit-animation: bounce 2s infinite; 
+  animation: bounce 2s infinite;
+}
+
+/* Keyframes for the bounce effect */
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
 
 #transactions-header h1 {
   font-size: 55px;
@@ -411,6 +451,7 @@ h1 {
   margin-bottom: 60px;
   font-weight: bolder;
   color: #3c3c3c;
+  margin-top: 200px;
 }
 
 .transaction-header {
@@ -435,7 +476,7 @@ h1 {
 .filter-btn {
   padding: 8px 16px;
   margin: 5px;
-  background-color: #255be3;
+  background-color: rgb(22,66,115);
   color: white;
   border: none;
   border-radius: 4px;
@@ -523,10 +564,6 @@ h1 {
   .balance-info p, .bank-info p {
     font-size: 20px;
   }
-
-  .financial-metrics {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* Desktop Styles for Transactions Content */
@@ -548,10 +585,6 @@ h1 {
 
   .action-btn, .filter-btn, .btn-details {
     padding: 12px 24px; 
-  }
-
-  #financial-health {
-    margin-top: 30px;
   }
 }
 
