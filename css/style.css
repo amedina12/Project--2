@@ -340,11 +340,91 @@ h1 {
   margin-bottom: 20px; 
 }
 
+#welcome-section {
+  padding: 20px;
+  text-align: center; 
+}
+
+.welcome-message h2 {
+  font-size: 40px; 
+  color: #0a4a9e; 
+  margin: 10px auto 30px; 
+  font-family: "Noto Sans";
+  margin-bottom: 120px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-evenly; 
+  flex-wrap: wrap; 
+  margin-bottom: 100px; 
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 15px;
+  font-family: "Noto Sans";
+}
+
+.info-title {
+  font-size: 25px; 
+  color: #0a4a9e;
+  margin-bottom: 5px; 
+}
+
+.info-value {
+  font-size: 20px; 
+  color: #000;
+  font-weight: bold; 
+}
+.balance-info, .bank-info {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 40px; 
+  font-size: 15px;
+  font-family: "Noto Sans";
+  color: #0a4a9e;
+}
+
+.balance-info div, .bank-info div {
+  text-align: center;
+  margin: 10px 0;
+  min-width: 120px; 
+}
+
+
+.account-actions {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px;
+  gap: 15px; 
+}
+
+.action-btn {
+  background-color: #255be3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: "Noto Sans";
+}
+
+.action-btn:hover {
+  background-color: #0056b3; 
+}
 
 #transactions-header h1 {
-  font-size: 50px; 
+  font-size: 55px;
   font-family: "Noto Sans";
   margin-bottom: 60px;
+  font-weight: bolder;
+  color: #3c3c3c;
 }
 
 .transaction-header {
@@ -450,6 +530,17 @@ h1 {
   #main {
     padding: 5% 10%; 
   }
+  #user-info, #financial-health {
+    padding: 30px;
+  }
+
+  .balance-info p, .bank-info p {
+    font-size: 20px;
+  }
+
+  .financial-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Desktop Styles for Transactions Content */
@@ -458,6 +549,25 @@ h1 {
     padding: 2% 5%; 
     background-color: white;
   }
+  #user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .account-actions {
+    flex-direction: row;
+    justify-content: center; 
+  }
+
+  .action-btn, .filter-btn, .btn-details {
+    padding: 12px 24px; 
+  }
+
+  #financial-health {
+    margin-top: 30px;
+  }
+}
 
   #transaction-filters button {
       padding: 10px 20px; 
@@ -503,7 +613,7 @@ h1 {
         padding: 10px 20px;
         font-size: 16px;
     }
-}
+
 
 /*desktop*/
 @media screen and (min-width: 992px){
