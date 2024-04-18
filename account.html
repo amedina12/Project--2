@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <img src="images/citi-logo.png" alt="image_Citi">
+        <div id="nav-container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="highlight"><a href="account.html">Account</a></li>
+            <li><a href="credit_card.html">Credit Card</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="welcome-section">
+	<div class="welcome-message">
+	  <h2>Welcome back, John Baker!</h2>
+	</div>
+	<div class="info-container">
+	  <div class="info-block">
+	    <p class="info-title">Current Balance</p>
+	    <span class="info-value">$11,238.16</span>
+	  </div>
+	  <div class="info-block">
+	    <p class="info-title">Available Credit</p>
+	    <span class="info-value">$5,000</span>
+          </div>
+	  <div class="info-block">
+	    <p class="info-title">Account Number</p>
+	    <span class="info-value">123456789</span>
+	  </div>
+	  <div class="info-block">
+	    <p class="info-title">Routing Number</p>
+	    <span class="info-value">987654321</span>
+	  </div>
+	</div>
+	<div class="account-actions">
+	  <button class="action-btn">Transfer Funds</button>
+	  <button class="action-btn">Pay Bills</button>
+	  <button class="action-btn">View Statements</button>
+	</div>
+	<div class="scroll-cta">
+	  <p>See your transactions below!</p>
+	  <span class="scroll-arrow">&#x2193;</span>
+	</div>
+      </section>	  
+      <section id="transactions-header">
+        <h1>Transactions</h1>
+        <div id="transaction-filters">
+          <button class="filter-btn" id="filter-all">All</button>
+          <button class="filter-btn" id="filter-completed">Completed</button>
+          <button class="filter-btn" id="filter-pending">Pending</button>
+          <input type="date" id="filter-date">
+        </div>
+      </section>
+      <div id="transactions-list">
+        <div class="transaction-header">
+	  <span class="transaction-header-item">Date</span>
+	  <span class="transaction-header-item">Time</span>
+	  <span class="transaction-header-item">Transaction ID</span>
+	  <span class="transaction-header-item">Name</span>
+	  <span class="transaction-header-item">Amount</span>
+	  <span class="transaction-header-item">Status</span>
+	</div>
+        <article class="transaction">
+	  <h2 class="transaction-heading">1</h2>
+          <div class="transaction-detail">
+            <span class="transaction-date">20 Dec 21</span>
+            <span class="transaction-time">12:20 AM</span>
+          </div>
+          <div class="transaction-detail">
+            <span class="transaction-id">720934212</span>
+            <span class="transaction-name">John Doe</span>
+          </div>
+          <div class="transaction-detail">
+            <span class="transaction-amount">$100.00</span>
+            <span class="transaction-status complete">Pending</span>
+          </div>
+          <div class="transaction-actions">
+            <button class="btn-details">Details</button>
+          </div>
+        </article>
+	<article class="transaction">
+	  <h2 class="transaction-heading">2</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">16 Jan 24</span>
+	    <span class="transaction-time">12:40 AM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">839401928</span>
+	    <span class="transaction-name">Martha Wallace</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$340.00</span>
+	    <span class="transaction-status complete">Complete</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+	<article class="transaction">
+	  <h2 class="transaction-heading">3</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">03 Mar 23</span>
+	    <span class="transaction-time">10:20 PM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">283945812</span>
+	    <span class="transaction-name">Bruce Wayne</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$7,0202.09</span>
+	    <span class="transaction-status complete">Complete</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+	<article class="transaction">
+	  <h2 class="transaction-heading">4</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">18 Aug 24</span>
+	    <span class="transaction-time">09:20 AM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">239405812</span>
+	    <span class="transaction-name">Jim Burton</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$54.20</span>
+	    <span class="transaction-status complete">Pending</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+	<article class="transaction">
+	  <h2 class="transaction-heading">5</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">13 Nov 23</span>
+	    <span class="transaction-time">07:30 PM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">001023438</span>
+	    <span class="transaction-name">Jack Peters</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$1,000.00</span>
+            <span class="transaction-status complete">Pending</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+	<article class="transaction">
+	  <h2 class="transaction-heading">6</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">01 Jul 22</span>
+	    <span class="transaction-time">05:38 AM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">112839487</span>
+	    <span class="transaction-name">Julia Mathews</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$820.50</span>
+	    <span class="transaction-status complete">Complete</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+        <article class="transaction">
+	  <h2 class="transaction-heading">7</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">07 May 25</span>
+	    <span class="transaction-time">12:20 AM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">678380186</span>
+	    <span class="transaction-name">Erik William</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$12,324.00</span>
+	    <span class="transaction-status complete">Pending</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+	<article class="transaction">
+	  <h2 class="transaction-heading">8</h2>
+	  <div class="transaction-detail">
+	    <span class="transaction-date">23 Feb 23</span>
+	    <span class="transaction-time">08:45 PM</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-id">762938471</span>
+	    <span class="transaction-name">Ava Brown</span>
+	  </div>
+	  <div class="transaction-detail">
+	    <span class="transaction-amount">$43.99</span>
+	    <span class="transaction-status complete">Complete</span>
+	  </div>
+	  <div class="transaction-actions">
+	    <button class="btn-details">Details</button>
+	  </div>
+	</article>
+      </div>
+    </main>
+    <footer class="footer">
+      <p id="CopyRight">&copy; 2024 Citibank, Citigroup Inc.</p>
+    </footer>
+  </body>
+</html>
