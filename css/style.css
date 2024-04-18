@@ -54,7 +54,6 @@
   font-weight: bold;
   font-size: 1.25em;
   margin: 3%;
-  
 }
 #statement_text {
   margin-bottom: 20%;
@@ -101,8 +100,8 @@
   margin: auto;
 }
 .footer {
-	background-color: rgb(219,219,220);
-	padding-bottom: 50px;
+  background-color: rgb(219,219,220);
+  padding-bottom: 50px;
 }
 #CCcontent{
   width: 95%;
@@ -235,8 +234,7 @@
   }
   #main {
     padding: 5% 20%;
-	  background-color: white;
-	 
+    background-color: white;	 
   }
  #Journey_Start { /*h1*/
    font-family:"Noto Sans";
@@ -254,7 +252,6 @@
    font-size: 1.75em;
    margin: 3%;
    margin-bottom: 5%;
-  
  }
  #statement_text {
    margin-bottom: 10%;
@@ -274,8 +271,8 @@
  }
   #Laptop_Guy{
     padding-bottom: 2%;
-	margin-right: 2%;
-	float: left;
+    margin-right: 2%;
+    float: left;
   }
   #Bonus {
     font-family:"Titillium Web";
@@ -292,7 +289,7 @@
  }
 
   #Credit_cards {
-	  margin-left: 30%;
+    margin-left: 30%;
   }
   #CCH1, #CCP1 {
     margin: 5%;
@@ -309,19 +306,17 @@
   }
   #input-tos {
     margin-bottom: 20px;
-    }
+  }
 }
 
 /* Mobile Styles for Transactions Content */
 #main {
   background-color: white;
 }
-
 h1 {
   text-align: center; 
   margin-bottom: 20px; 
 }
-
 #welcome-section {
   padding: 20px;
   text-align: center; 
@@ -330,7 +325,6 @@ h1 {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   margin: 70px auto;
 }
-
 .welcome-message h2 {
   font-size: 40px; 
   color: #0a4a9e; 
@@ -338,14 +332,12 @@ h1 {
   font-family: "Noto Sans";
   margin-bottom: 120px;
 }
-
 .info-container {
   display: flex;
   justify-content: space-evenly; 
   flex-wrap: wrap; 
   margin-bottom: 100px; 
 }
-
 .info-block {
   display: flex;
   flex-direction: column; 
@@ -353,13 +345,11 @@ h1 {
   margin: 0 15px;
   font-family: "Noto Sans";
 }
-
 .info-title {
   font-size: 25px; 
   color: #0a4a9e;
   margin-bottom: 5px; 
 }
-
 .info-value {
   font-size: 20px; 
   color: #000;
@@ -374,14 +364,11 @@ h1 {
   font-family: "Noto Sans";
   color: #0a4a9e;
 }
-
 .balance-info div, .bank-info div {
   text-align: center;
   margin: 10px 0;
   min-width: 120px; 
 }
-
-
 .account-actions {
   display: flex;
   flex-direction: column; 
@@ -389,7 +376,6 @@ h1 {
   margin-top: 20px;
   gap: 15px; 
 }
-
 .action-btn {
   background-color: rgb(22,66,115);
   border: none;
@@ -400,7 +386,6 @@ h1 {
   transition: background-color 0.2s;
   font-family: "Noto Sans";
 }
-
 .action-btn:hover {
   background-color: #0056b3; 
 }
@@ -409,13 +394,11 @@ h1 {
   padding: 20px;
   margin: 20px 0; 
 }
-
 .scroll-cta p {
   font-family: 'Noto Sans', sans-serif;
   color: #0a4a9e; 
   margin-bottom: 10px;
 }
-
 .scroll-arrow {
   display: inline-block;
   font-size: 24px; 
@@ -423,9 +406,7 @@ h1 {
   -webkit-animation: bounce 2s infinite; 
   animation: bounce 2s infinite;
 }
-
 /* Keyframes for the bounce effect */
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -440,7 +421,6 @@ h1 {
     transform: translateY(-10px);
   }
 }
-
 #transactions-header h1 {
   font-size: 55px;
   font-family: "Noto Sans";
@@ -449,7 +429,6 @@ h1 {
   color: #3c3c3c;
   margin-top: 200px;
 }
-
 .transaction-header {
   display: flex;
   justify-content: space-between;
@@ -468,7 +447,6 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .filter-btn {
   padding: 8px 16px;
   margin: 5px;
@@ -493,8 +471,6 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s; 
 }
-
-
 #transaction-filters button, #transaction-filters input[type="date"] {
   display: inline-block;
   margin-bottom: 5px;
@@ -512,11 +488,9 @@ h1 {
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 .transaction:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
-
 .transaction-detail {
   display: flex;
   justify-content: space-between;
@@ -524,17 +498,13 @@ h1 {
   margin-bottom: 8px;
   font-size: 14px;
 }
-
-
 .transaction-detail span {
   display: block;
   font-family: "Noto Sans";
 }
-
 .transaction-actions {
   text-align: center;
 }
-
 .btn-details {
   background-color: #114dc3;
   color: white;
@@ -556,12 +526,10 @@ h1 {
   #user-info, #financial-health {
     padding: 30px;
   }
-
   .balance-info p, .bank-info p {
     font-size: 20px;
   }
 }
-
 /* Desktop Styles for Transactions Content */
 @media screen and (min-width: 800px) {
   #main {
@@ -573,29 +541,24 @@ h1 {
     flex-direction: column;
     align-items: center; 
   }
-
   .account-actions {
     flex-direction: row;
     justify-content: center; 
   }
-
   .action-btn, .filter-btn, .btn-details {
     padding: 12px 24px; 
   }
 }
-
   #transaction-filters button {
-      padding: 10px 20px; 
-      font-size: 16px;
+    padding: 10px 20px; 
+    font-size: 16px;
   }
-
   .transaction {
     display: flex;
     justify-content: space-between;
     align-items: center; 
     padding: 15px 20px; 
   }
-
    .transaction-detail, .transaction-header {
     display: flex;
     justify-content: space-between;
@@ -609,27 +572,20 @@ h1 {
   .transaction-actions {
     justify-self: end; 
   }
-
   .btn-details {
       padding: 10px 20px; 
   }
-  
-
-    #transaction-filters {
-        text-align: left;
-    }
-
-    .filter-btn {
-        padding: 10px 20px; 
-        font-size: 16px;
-    }
-
-    #filter-date {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-
+  #transaction-filters {
+    text-align: left;
+  }
+  .filter-btn {
+    padding: 10px 20px; 
+    font-size: 16px;
+  }
+  #filter-date {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 /*desktop*/
 @media screen and (min-width: 992px){
   #CCcontent {
@@ -675,10 +631,7 @@ h1 {
    font-size: 1.75em;
    margin: 3%;
    margin-bottom: 5%;
-  
  }
-
-
 } 
  #statement_text {
    margin-bottom: 10%;
@@ -698,14 +651,13 @@ h1 {
  }
   #Laptop_Guy{
     padding-bottom: 2%;
-	margin-right: 2%;
-	float: left;
+    margin-right: 2%;
+    float: left;
   }
   /*code for effect is by Wei
     https://codepen.io/Wei_zhang/pens/public?cursor=ZD0xJm89MCZwPTEmdj00OTAwODAxOQ==
   */
- html,
-body {
+ html, body {
   width: 100%;
   height: 100%;
   font-family: "Noto Sans","Titillium Web","Segoe UI", "Arial", "sans-serif";
@@ -718,7 +670,6 @@ body {
   margin-bottom: 25%;
   transform: translate(-50%, -50%) scale(2);
 }
-
 .bonus-effect::before {
   content: attr(data-word);
   color: #f00;
@@ -732,7 +683,6 @@ body {
   overflow: hidden;
   animation: move 1s infinite;
 }
-
 .bonus-effect::after {
   content: attr(data-word);
   color: #0ff;
@@ -746,7 +696,6 @@ body {
   mix-blend-mode: lighten;
   animation: move 0.9s infinite;
 }
-
 @keyframes move {
   10% {
     top: -0.4px;
@@ -805,4 +754,3 @@ body {
    height: 46px;
    margin: auto;
  }
-
