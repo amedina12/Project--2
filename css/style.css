@@ -46,7 +46,7 @@
   font-size: 2.441em;
 }
 #Intro_text {
-  font-family:"Titillium Web";
+  font-family:"Noto Sans";
   font-size: 1.2em;
 }
 #Monthly_State { /*h2*/
@@ -101,7 +101,7 @@
   margin: auto;
 }
 .footer {
-	background-color: #bbbcb8;
+	background-color: rgb(219,219,220);
 	padding-bottom: 50px;
 }
 #CCcontent{
@@ -294,10 +294,6 @@
   #Credit_cards {
 	  margin-left: 30%;
   }
-  .footer {
-	  background-color: #bbbcb8;
-	  padding-bottom: 50px;
-  }
   #CCH1, #CCP1 {
     margin: 5%;
   }
@@ -313,7 +309,7 @@
   }
   #input-tos {
     margin-bottom: 20px;
-  }
+    }
 }
 
 /* Mobile Styles for Transactions Content */
@@ -712,7 +708,7 @@ h1 {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Titillium Web", "Segoe UI", "Arial", "sans-serif";
+  font-family: "Noto Sans","Titillium Web","Segoe UI", "Arial", "sans-serif";
   background-color: white;
 }
 .bonus-effect {
