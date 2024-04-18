@@ -46,7 +46,7 @@
   font-size: 2.441em;
 }
 #Intro_text {
-  font-family:"Titillium Web";
+  font-family:"Noto Sans";
   font-size: 1.2em;
 }
 #Monthly_State { /*h2*/
@@ -712,7 +712,7 @@ h1 {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Titillium Web", "Segoe UI", "Arial", "sans-serif";
+  font-family: "Noto Sans","Titillium Web","Segoe UI", "Arial", "sans-serif";
   background-color: white;
 }
 .bonus-effect {
