@@ -83,7 +83,7 @@
 */
 
 .bonus-effect {
-  font-size: 10px;
+  font-size: 8px;
   margin-left: 55%;
   margin-bottom: 25%;
   transform: translate(-50%, -50%) scale(2);
@@ -92,7 +92,7 @@
 .bonus-effect::before {
   content: attr(data-word);
   color: #f00;
-  font-size: 10px;
+  font-size: 8px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -351,40 +351,40 @@
     https://codepen.io/Wei_zhang/pens/public?cursor=ZD0xJm89MCZwPTEmdj00OTAwODAxOQ==
   */
 
-.bonus-effect {
-  font-size: 20px;
-  margin-left: 55%;
-  margin-bottom: 25%;
-  transform: translate(-50%, -50%) scale(2);
-}
+ .bonus-effect {
+   font-size: 20px;
+   margin-left: 55%;
+   margin-bottom: 25%;
+   transform: translate(-50%, -50%) scale(2);
+ }
 
-.bonus-effect::before {
-  content: attr(data-word);
-  color: #f00;
-  font-size: 20px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 2;
-  filter: contrast(200%);
-  text-shadow: 1px 0 0 #f00;
-  overflow: hidden;
-  animation: move 1s infinite;
-}
+ .bonus-effect::before {
+   content: attr(data-word);
+   color: #f00;
+   font-size: 20px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 2;
+   filter: contrast(200%);
+   text-shadow: 1px 0 0 #f00;
+   overflow: hidden;
+   animation: move 1s infinite;
+ }
 
-.bonus-effect::after {
-  content: attr(data-word);
-  color: #0ff;
-  position: absolute;
-  top: 0px;
-  left: 1px;
-  z-index: 2;
-  filter: contrast(200%);
-  overflow: hidden;
-  text-shadow: 1px 0 0 #0ff;
-  mix-blend-mode: lighten;
-  animation: move 0.9s infinite;
-}
+ .bonus-effect::after {
+   content: attr(data-word);
+   color: #0ff;
+   position: absolute;
+   top: 0px;
+   left: 1px;
+   z-index: 2;
+   filter: contrast(200%);
+   overflow: hidden;
+   text-shadow: 1px 0 0 #0ff;
+   mix-blend-mode: lighten;
+   animation: move 0.9s infinite;
+ }
 
 @keyframes move {
   10% {
