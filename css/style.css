@@ -37,7 +37,7 @@
   background-color:rgb(40,96,161);
 }
 #main {
-  padding: 5% 20%;
+  padding: 5% 5%;
   background-color: white;
 }
 #Journey_Start { /*h1*/
@@ -47,7 +47,8 @@
 }
 #Intro_text {
   font-family:"Noto Sans";
-  font-size: 1.2em;
+  font-size: 1.2em; 
+  margin: 8% 5%;
 }
 #Monthly_State { /*h2*/
   font-family:"Noto Sans";
@@ -72,9 +73,9 @@
 }
 #Laptop_Guy{
   padding-bottom: 2%;
-  margin-bottom: 8%;
-  margin-top: 2%;
-  margin-right: 2%;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  margin-left: 15%;
   width: 60%;
   height: auto;
 }
@@ -83,16 +84,17 @@
 */
 
 .bonus-effect {
-  font-size: 8px;
+  font-size: 12px;
   margin-left: 55%;
   margin-bottom: 25%;
+  margin-top: 10%;
   transform: translate(-50%, -50%) scale(2);
 }
 
 .bonus-effect::before {
   content: attr(data-word);
-  color: #f00;
-  font-size: 8px;
+  color: #004685;
+  font-size: 12px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -105,7 +107,7 @@
 
 .bonus-effect::after {
   content: attr(data-word);
-  color: #0ff;
+  color: #004685;
   position: absolute;
   top: 0px;
   left: 1px;
@@ -317,6 +319,7 @@
    font-family:"Titillium Web";
    margin-left: 15%;
    font-size: 1.25em;
+   margin: 8% 5%;;
  }
  #Monthly_State { /*h2*/
    font-family:"Noto Sans";
@@ -345,8 +348,8 @@
     padding-bottom: 2%;
     margin-right: 2%;
     float: left;
+	margin-left: 0;
   }
-    }
   /*code for effect is by Wei
     https://codepen.io/Wei_zhang/pens/public?cursor=ZD0xJm89MCZwPTEmdj00OTAwODAxOQ==
   */
@@ -360,7 +363,7 @@
 
  .bonus-effect::before {
    content: attr(data-word);
-   color: #f00;
+   color: #004685;
    font-size: 20px;
    position: absolute;
    top: 0px;
@@ -374,7 +377,7 @@
 
  .bonus-effect::after {
    content: attr(data-word);
-   color: #0ff;
+   color: #004685;
    position: absolute;
    top: 0px;
    left: 1px;
@@ -766,6 +769,7 @@ h1 {
    font-family:"Titillium Web";
    margin-left: 27%;
    font-size: 1.25em;
+   margin-top: 4%;
  }
  #Monthly_State { /*h2*/
    font-family:"Noto Sans";
@@ -774,7 +778,6 @@ h1 {
    margin: 3%;
    margin-bottom: 5%;
  }
-} 
  #statement_text {
    margin-bottom: 10%;
    margin-top: 20%;
@@ -808,7 +811,7 @@ h1 {
 }
 .bonus-effect::before {
   content: attr(data-word);
-  color: #f00;
+  color: #004685;
   font-size: 36px;
   position: absolute;
   top: 0px;
@@ -821,7 +824,7 @@ h1 {
 }
 .bonus-effect::after {
   content: attr(data-word);
-  color: #0ff;
+  color: #004685;
   position: absolute;
   top: 0px;
   left: 1px;
@@ -893,3 +896,4 @@ h1 {
    height: 46px;
    margin: auto;
  }
+}
